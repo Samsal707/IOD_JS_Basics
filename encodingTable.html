@@ -1,0 +1,47 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles. CSS"/>
+</head>
+<body>
+    <header>
+        <h1 id = "header">Header</h1>
+    </header>
+ <h1>This is a heading</h1>
+ <p>This is a paragraph.</p>
+ <p id = "demo">Hello World!</p>
+
+ <section>
+    <aside>
+        <h2>Related</h2>
+        <p>Paragraph...</p>
+        <a href="https://www.google.com/" >More information</a>
+    </aside>
+ </section>
+
+ <script language = "JavaScript">
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("header").innerHTML = "hello JavaScript! Where is Java?";
+
+    
+    
+    
+    let outputHTML = "<table>";
+    
+    for (i = 0; i <= 10; i++){
+        if (i == 0) {
+            outputHTML += "<th>";
+            outputHTML += "numbers 1 to 10";
+            outputHTML += "</th>";
+        } else {
+            outputHTML += "<tr>";
+            outputHTML += "<td>" + i + "</td>";
+            outputHTML += "<tr>";
+        }
+    };
+    
+    document.write(outputHTML + "</table>");
+
+
+ </script>
+</body>
+</html>

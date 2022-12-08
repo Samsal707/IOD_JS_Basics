@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="formCalculator">
+            <input type="number" id = "one" name = "Number1" placeholder = "number 1" >
+            <br\>
+
+            <input type="number" id = "one" name = "Number2" value = "number2" placeholder = "number 2">
+            <br\>
+
+            <input type ="button" name = "Add"  value="Add" onClick = "calculator()" >
+
+            <input type ="button" name = "Subtract"  value="Subtract" onClick = "calculator()" >
+
+            <input type ="button" name = "Multiply"  value="Multiply" onClick = "calculator()">
+
+            <input type ="button" name = "Dviide"  value="Divide" onClick = "calculator()" >
+
+            <p>Output:</p>
+            <h1 id = "outPut" ></h1>
+
+        </form>
+        
+
+        <script>
+            function calculator () {
+                let num1 = document.getElementById("one").value;
+                let num2 = document.getElementById("two").value;
+                let sum;
+
+            
+                let butn = document.getElementsByTagName('button');
+                    if (button.name == "Add"){
+                        sum = num + num2;
+                    }
+                    if (button.onClick == "subtract()"){
+                        sum = valuesC[0] - valuesC[1];
+                    }
+                    if (button.onClick == "multiply()"){
+                        sum = valuesC[0] * valuesC[1];
+                    }
+                    if (button.onClick == "divide()"){
+                        sum = valuesC[0] / valuesC[1];
+                    }
+
+                    document.getElementById("outPut").innerHTML = String(sum)
+            }
+
+    
+            
+        </script>
+    </body>
+</html>

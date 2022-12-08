@@ -1,0 +1,33 @@
+<html>
+<body>
+  <div>Begin</div>
+
+  <ul>
+    <li>Information</li>
+  </ul>
+
+  <div>End</div>
+
+  <script>
+    for (let elem of document.body.children) {
+      alert(elem); // DIV, UL, DIV, SCRIPT
+    }
+//     while(elem = elem.parentElement) { // go up till <html>
+//   alert( elem );
+// }
+    // for (let i = 0; i < document.body.childNodes.length; i++) {
+    //     alert(document.body.childNodes.length);
+    //   alert( document.body.childNodes[i] ); // Text, DIV, Text, UL, ..., SCRIPT
+    // }
+//     alert( document.body.parentNode); // true
+
+// // after <head> goes <body>
+//     alert( document.head.nextSibling.firstElementChild ); // HTMLBodyElement
+
+// // before <body> goes <head>
+//     alert( document.body.previousSibling ); // HTMLHeadElement
+
+  </script>
+  ...more stuff...
+</body>
+</html>
